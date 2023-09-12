@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GSImageFilter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="u8z-wS-j3C">
+                                <rect key="frame" x="16" y="83" width="361" height="536"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5eR-yG-CWK">
+                                <rect key="frame" x="138.33333333333334" y="743" width="116.66666666666666" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Show Filters"/>
+                                <connections>
+                                    <action selector="showFilters:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gae-OE-lyK"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6PQ-4X-EJm">
+                                <rect key="frame" x="0.0" y="852" width="393" height="0.0"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="Hxd-2B-FCL"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8JF-DM-42T">
+                                <rect key="frame" x="143" y="643" width="107" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Pick Image"/>
+                                <connections>
+                                    <action selector="pickImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OLC-4N-Ct1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="u8z-wS-j3C" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="K2y-sT-Pgo"/>
+                            <constraint firstAttribute="bottom" secondItem="8JF-DM-42T" secondAttribute="bottom" constant="174" id="P86-9T-6ZT"/>
+                            <constraint firstItem="5eR-yG-CWK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XSN-hY-bph"/>
+                            <constraint firstItem="6PQ-4X-EJm" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="caG-fr-XdY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5eR-yG-CWK" secondAttribute="bottom" constant="40" id="dWM-Ws-NdT"/>
+                            <constraint firstItem="u8z-wS-j3C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="fLb-BQ-Ck1"/>
+                            <constraint firstItem="6PQ-4X-EJm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lqp-T0-GIM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="u8z-wS-j3C" secondAttribute="trailing" constant="16" id="oaN-3o-u9r"/>
+                            <constraint firstItem="8JF-DM-42T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pRC-jJ-53R"/>
+                            <constraint firstItem="6PQ-4X-EJm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wBE-Ts-wpF"/>
+                            <constraint firstItem="8JF-DM-42T" firstAttribute="top" secondItem="u8z-wS-j3C" secondAttribute="bottom" constant="24" id="whc-OW-x4F"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="heightToolView" destination="Hxd-2B-FCL" id="MLf-JL-q29"/>
+                        <outlet property="imageView" destination="u8z-wS-j3C" id="5jQ-iR-B2g"/>
+                        <outlet property="toolBarView" destination="6PQ-4X-EJm" id="0CJ-h7-CPw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="81.679389312977094" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

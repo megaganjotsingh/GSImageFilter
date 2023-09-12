@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Muli-Bold.ttf">
+            <string>Muli-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FilterToolViewCell" customModule="Screen_Recorder___Video_Capture" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="107" height="104"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="107" height="104"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="L8w-jU-zUY">
+                        <rect key="frame" x="5" y="5" width="97" height="94"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Orianl" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mD7-EK-1dj">
+                        <rect key="frame" x="5" y="84.5" width="97" height="11.5"/>
+                        <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="9"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="L8w-jU-zUY" secondAttribute="trailing" constant="5" id="HOR-rt-uAD"/>
+                <constraint firstAttribute="trailing" secondItem="mD7-EK-1dj" secondAttribute="trailing" constant="5" id="NJZ-cT-wS9"/>
+                <constraint firstAttribute="bottom" secondItem="mD7-EK-1dj" secondAttribute="bottom" constant="8" id="NKh-we-JhB"/>
+                <constraint firstItem="L8w-jU-zUY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="PVT-gN-tIz"/>
+                <constraint firstItem="mD7-EK-1dj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="Y7Q-ug-AXL"/>
+                <constraint firstAttribute="bottom" secondItem="L8w-jU-zUY" secondAttribute="bottom" constant="5" id="lJ8-vv-Uyk"/>
+                <constraint firstItem="L8w-jU-zUY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="tux-7K-FbG"/>
+            </constraints>
+            <size key="customSize" width="107" height="104"/>
+            <connections>
+                <outlet property="imageView" destination="L8w-jU-zUY" id="K52-7a-9ef"/>
+                <outlet property="titleLabel" destination="mD7-EK-1dj" id="DAz-wi-9RO"/>
+            </connections>
+            <point key="canvasLocation" x="-41.304347826086961" y="107.14285714285714"/>
+        </collectionViewCell>
+    </objects>
+</document>
