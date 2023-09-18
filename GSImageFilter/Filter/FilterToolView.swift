@@ -24,7 +24,6 @@ class FilterToolView: BaseToolView {
         collectionView.reloadData()
     }
 
-    // - Action
     @IBAction func closeAction(_: Any) {
         closeToolViewClick?()
     }
