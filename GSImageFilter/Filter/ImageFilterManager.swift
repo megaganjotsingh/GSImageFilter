@@ -24,7 +24,6 @@ class ImageFilterManager {
             if let output = currentFilter.outputImage {
                 if let cgimg = context.createCGImage(output, from: output.extent) {
                     let processedImage = UIImage(cgImage: cgimg)
-                    // do something interesting with the processed image
                     completion(processedImage)
                 }
             }
