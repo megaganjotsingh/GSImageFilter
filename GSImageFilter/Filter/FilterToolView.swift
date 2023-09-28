@@ -10,7 +10,6 @@ import UIKit
 class FilterToolView: BaseToolView {
     @IBOutlet private var collectionView: UICollectionView!
     @IBOutlet private var titleLabel: UILabel!
-
     var index = -1
 
     func setupCollection() {
